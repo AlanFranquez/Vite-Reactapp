@@ -1,3 +1,4 @@
+import Proptypes from 'prop-types';
 import React from 'react'
 
 // const obj = {
@@ -24,6 +25,12 @@ function FirstApp({titulo, subtitulo}) {
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi accusamus impedit quaerat itaque harum, soluta laborum eaque, et tenetur dolores nulla vel rem voluptatum minus rerum vitae quae, veritatis voluptatibus?</p>
     </>
   )
+}
+
+//Proptypes, obligamos a los desarolladores a colocarle valores a los diferentes props.
+FirstApp.propTypes = {
+  titulo: Proptypes.string.isRequired,
+  subtitulo: Proptypes.number.isRequired
 }
 
 export default FirstApp

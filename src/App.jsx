@@ -3,7 +3,7 @@ import FirstApp from './FirstApp'
 function App() {
   return (
     <div>
-      <FirstApp titulo='HelloooooOoo' subtitulo={12345}/>
+      <FirstApp titulo='Hi' subtitulo={12345}/>
     </div>
   )
 }
