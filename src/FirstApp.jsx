@@ -37,7 +37,7 @@ FirstApp.propTypes = {
 
 // Valores por defecto para las propiedades
 FirstApp.defaultProps = {
-  titulo: 'No hay titulo todavía xD',
+  // titulo: 'No hay titulo todavía xD',
   subtitulo: 123,
   nombre: 'Alan Fránquez'
 }
