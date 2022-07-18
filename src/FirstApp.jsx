@@ -20,8 +20,9 @@ function FirstApp({titulo, subtitulo, nombre}) {
     {/* <h1>{Hola(1,4)}</h1> */}
     {/* <code>{JSON.stringify(obj)}</code> */}
    
-    <h1>{titulo}</h1>
-    <h2>{subtitulo +1}</h2>
+    <div data-testid="test-title"> {titulo} </div>
+    <h2>{subtitulo}</h2>
+    <h2>{subtitulo}</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi accusamus impedit quaerat itaque harum, soluta laborum eaque, et tenetur dolores nulla vel rem voluptatum minus rerum vitae quae, veritatis voluptatibus?</p>
 
     <p>{nombre}</p>
@@ -32,13 +33,13 @@ function FirstApp({titulo, subtitulo, nombre}) {
 //Proptypes, obligamos a los desarolladores a colocarle valores a los diferentes props.
 FirstApp.propTypes = {
   titulo: Proptypes.string.isRequired,
-  subtitulo: Proptypes.number.isRequired
+  subtitulo: Proptypes.string.isRequired
 }
 
 // Valores por defecto para las propiedades
 FirstApp.defaultProps = {
   // titulo: 'No hay titulo todavía xD',
-  subtitulo: 123,
+  subtitulo: 'prueaaaba',
   nombre: 'Alan Fránquez'
 }
 
